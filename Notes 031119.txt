@@ -1,0 +1,70 @@
+Agile Method - Project Management
+    - Scrum
+    - Framework
+Reqs and Soluctions
+    Collaboration of self organizing cross functional teams & their customers
+Terms
+    Product Backlog
+    Release planning
+    Srint Planning Meeting
+    Spring Backlog
+    Backlog tasks
+    Daily
+
+App: 
+    User Story:
+    I want to know who came to my event.
+        Question what are you using the list for?
+        - Patron Registration - patronReg form
+            * First name
+            * Last name
+            * Set Hidden Event Name
+            * Client Side Transfer
+            * Freeway - Road to DB
+        - hostPage - 
+            * Set Event Name
+            * Store Event Name - 
+                - Cookie
+                - Session
+                - Local Storage
+        - database (DB)
+            * firstName
+            * lastName
+            * id
+            * createDate
+            * eventDate
+            * Freeway - Road to ER
+        - servers
+            * Github pages => Github Compute Engine (GCE)
+        - eventReport (ER) - form handling - Transportation
+            * dataPage.php
+                ~ hostPage 
+                    - User adds eventName
+                    - listen for eventName (form submission data)
+                ~ patronReg: POST => insert valid => DB
+                    - If POST => Db
+                ~ GCE 
+                    - send information to GCE and back again - Transportation
+                ~ eventReport:Statement GET => if(isset($_GET('eventName'))) SELECT * 
+                    - Title of Event (eventName)
+                    - Table - lastName, firstName
+                    - XHR Object (AJAX) - an API in the form of and object whose methods transfer data between web browser and server 
+                        * get, url, eventName
+                    - Resp = Table
+            Github pages
+                patronReg.html
+                eventReport.html
+                hostPage.html
+                main.css
+                main.js
+            GCE
+                dataPage.php
+                GCE setup
+                    LAMP: Marketplace
+                    phpMyAdmin 
+                        dbName
+                        table 
+                        columns
+                    Connection
+                        (userName, password)
+                        FTP

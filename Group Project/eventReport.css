@@ -1,0 +1,19 @@
+.background {
+    position: relative;
+    display: inline-block;
+}
+.background .title {
+    opacity: 0.5;
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 40%;
+    text-align: center;
+    width: 60%;
+    height: 2rem;
+}
+.form {
+    
+}
